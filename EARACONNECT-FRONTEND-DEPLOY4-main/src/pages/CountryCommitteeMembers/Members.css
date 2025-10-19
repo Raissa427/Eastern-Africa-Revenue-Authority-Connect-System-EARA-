@@ -1,0 +1,122 @@
+.member-container {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.member-table th, .member-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.member-table th {
+  background-color: #f8f9fa;
+}
+
+.member-form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.checkbox-group label {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+/* Action buttons */
+.btn-edit, .btn-delete {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 16px;
+  margin: 0 3px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-edit {
+  color: #3498db; /* Blue for Edit */
+}
+
+.btn-delete {
+  color: #e74c3c; /* Red for Delete */
+}
+
+.btn-edit:hover, .btn-delete:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.btn-resend {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-resend:hover {
+  background-color: #138496;
+}
+
+.btn-resend:active {
+  background-color: #117a8b;
+}
+
+.btn-status {
+  background-color: #8b5cf6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-status:hover {
+  background-color: #7c3aed;
+}
+
+.btn-status:active {
+  background-color: #6d28d9;
+}
+
+/* Role icons */
+.role-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.role-icons span {
+  cursor: default;
+  color: #555;
+}
+
+.role-icons svg {
+  vertical-align: middle;
+}
+
+/* Table responsiveness */
+@media (max-width: 768px) {
+  .member-table {
+    display: block;
+    overflow-x: auto;
+  }
+}

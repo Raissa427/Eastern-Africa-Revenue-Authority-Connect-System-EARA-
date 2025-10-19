@@ -1,0 +1,147 @@
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000; /* Ensure sidebar stays above content */
+  overflow-y: auto; /* Add scroll if content is long */
+}
+
+.sidebar-header {
+  padding: 20px;
+  background-color: #1a252f;
+}
+
+.sidebar-header h3 {
+  color: #ffffff !important; /* Force white color for sidebar header */
+  font-weight: bold; /* Make header text more prominent */
+  margin: 0; /* Remove default margins */
+  font-size: 1.5rem; /* Appropriate size for header */
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #34495e;
+}
+
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-menu li:hover {
+  background-color: #34495e;
+}
+
+.mode-toggle-item {
+  margin-top: auto;
+  border-top: 2px solid #34495e;
+  padding: 15px 20px;
+}
+
+.mode-toggle {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  border: 2px solid #3498db;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mode-toggle:hover {
+  background: linear-gradient(135deg, #2980b9 0%, #1f5f8b 100%);
+  border-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mode-toggle:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logout-item {
+  border-top: 2px solid #34495e;
+}
+
+.logout-button {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  border: 2px solid #e74c3c;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+  border-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logout-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+  }
+  
+  .sidebar-header {
+    padding-top: 50px; /* Make space for toggle button */
+  }
+  
+  .mode-toggle {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  
+  .mode-toggle span {
+    display: none; /* Hide text on mobile, show only icon */
+  }
+}
